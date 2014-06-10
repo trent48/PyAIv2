@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+ 
+
+	<category>
+        <pattern>*</pattern>
+	<template>@ creat a new pattern and template</template>
+</category>
+
+<category><pattern>COMMANDS</pattern><template>define, save brain, reload brain</template></category>
+<category><pattern>WOOP</pattern><template>party!!</template></category>
+<category><pattern>BOT PROPERTIES</pattern><template>
+name : <bot name="name"/>
+<bot name="age"/>
+<bot name="gender"/>
+<bot name="location"/>
+<bot name="nationality"/>
+<bot name="birthday"/>
+<bot name="sign"/>
+Botmaser: <bot name="botmaster"/>
+</template></category>
+
+<category><pattern>OPEN EZTV</pattern><template>! opening eztv now</template></category>
+<category><pattern>* NEW TV SHOW</pattern><template><srai>OPEN EZTV</srai>/template></category>
+<category><pattern>WIKI SEARCH *</pattern><template>!wiki ,<star/></template></category>
+<category><pattern>DATE</pattern><template><date format="%c"/></template></category>
+</aiml>
